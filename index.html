@@ -2,10 +2,130 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>Min Nettside</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Puzzle - Utfordrende Puslespill</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; text-align: center; }
+        h1 { font-size: 3em; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2em; opacity: 0.9; }
+        
+        .features { padding: 80px 0; background: #f8f9fa; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px; }
+        .feature { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
+        .feature h3 { color: #667eea; margin-bottom: 15px; }
+        
+        .how-to-play { padding: 80px 0; }
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .step { text-align: center; }
+        .step-number { background: #667eea; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5em; font-weight: bold; }
+        
+        .download { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); color: white; padding: 80px 0; text-align: center; }
+        .download-buttons { margin-top: 30px; }
+        .btn { display: inline-block; background: white; color: #667eea; padding: 15px 30px; margin: 10px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: transform 0.3s; }
+        .btn:hover { transform: translateY(-2px); }
+        
+        footer { background: #333; color: white; padding: 40px 0; text-align: center; }
+        .footer-links { margin-top: 20px; }
+        .footer-links a { color: #667eea; text-decoration: none; margin: 0 15px; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .feature-grid, .steps { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Velkommen til min nettside!</h1>
-    <p>Dette er en testside hostet på GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <h1>Toggle Puzzle</h1>
+            <p class="subtitle">Det ultimate puslespillet som utfordrer hjernen din</p>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">Hvorfor Toggle Puzzle?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>🧩 Utfordrende Nivåer</h3>
+                    <p>Hundrevis av unike puslespill som tester logikken din. Fra enkle oppvarmingsrunder til hjerneknusende utfordringer.</p>
+                </div>
+                <div class="feature">
+                    <h3>💡 Hint-system</h3>
+                    <p>Står du fast? Bruk hint-systemet vårt for å få små tips som hjelper deg videre uten å ødelegge gløden av å løse gåten selv.</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Offline Spilling</h3>
+                    <p>Spill hvor som helst, når som helst. Ingen internettforbindelse nødvendig - perfekt for reiser og ventetid.</p>
+                </div>
+                <div class="feature">
+                    <h3>🎯 Enkel å Lære</h3>
+                    <p>Intuitive kontroller som alle kan mestre på sekunder, men dybde som holder deg engasjert i timevis.</p>
+                </div>
+                <div class="feature">
+                    <h3>🏆 Progresjon</h3>
+                    <p>Lås opp nye nivåer etter hvert som du mestrer utfordringene. Din fremgang lagres automatisk.</p>
+                </div>
+                <div class="feature">
+                    <h3>🎨 Rent Design</h3>
+                    <p>Minimalistisk og elegant design som lar deg fokusere på det som betyr noe - å løse puslespillene.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-play">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">Slik Spiller Du</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Trykk på Rutene</h3>
+                    <p>Trykk på rutene for å toggle dem mellom på og av. Hver rute påvirker også naboene sine.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Planlegg Strategien</h3>
+                    <p>Tenk nøye gjennom hver bevegelse. Målet er å få alle rutene til å lyse eller slukke samtidig.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Bruk Hints</h3>
+                    <p>Trenger du hjelp? Se en kort annonse for å få et verdifullt hint som viser deg riktig retning.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Mester Nivået</h3>
+                    <p>Løs puslespillet og lås opp neste utfordring. Hver seier bringer deg nærmere å bli en ekte puzzle-mester!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">Last Ned Toggle Puzzle I Dag</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Gratis å laste ned og spille. Start din puslespill-reise nå!</p>
+            <div class="download-buttons">
+                <a href="#" class="btn">📱 Google Play Store</a>
+                <a href="#" class="btn">🍎 App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Toggle Puzzle. Alle rettigheter reservert.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Personvernregler</a>
+                <a href="app-ads.txt">App-ads.txt</a>
+                <a href="mailto:support@togglepuzzle.com">Kontakt Oss</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
